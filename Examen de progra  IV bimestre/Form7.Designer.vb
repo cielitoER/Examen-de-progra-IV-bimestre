@@ -22,6 +22,7 @@ Partial Class Form7
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form7))
         TextBox1 = New TextBox()
         TextBox2 = New TextBox()
         TextBox3 = New TextBox()
@@ -72,12 +73,14 @@ Partial Class Form7
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
         ClientSize = New Size(800, 450)
         Controls.Add(Label1)
         Controls.Add(Button1)
         Controls.Add(TextBox3)
         Controls.Add(TextBox2)
         Controls.Add(TextBox1)
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Form7"
         Text = "Form7"
         ResumeLayout(False)

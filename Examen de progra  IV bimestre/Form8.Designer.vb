@@ -22,6 +22,7 @@ Partial Class Form8
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form8))
         TextBox1 = New TextBox()
         TextBox2 = New TextBox()
         Button1 = New Button()
@@ -84,6 +85,7 @@ Partial Class Form8
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(192))
         ClientSize = New Size(800, 450)
         Controls.Add(Label3)
         Controls.Add(Label2)
@@ -91,6 +93,7 @@ Partial Class Form8
         Controls.Add(Button1)
         Controls.Add(TextBox2)
         Controls.Add(TextBox1)
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Form8"
         Text = "Login 1.0"
         ResumeLayout(False)

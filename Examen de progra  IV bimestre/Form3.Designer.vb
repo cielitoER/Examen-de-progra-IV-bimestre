@@ -22,6 +22,7 @@ Partial Class Form3
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form3))
         Button1 = New Button()
         Button2 = New Button()
         Button3 = New Button()
@@ -78,12 +79,14 @@ Partial Class Form3
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(192))
         ClientSize = New Size(800, 450)
         Controls.Add(Label1)
         Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(Button1)
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Form3"
         Text = "Operación 2.0"
         ResumeLayout(False)
