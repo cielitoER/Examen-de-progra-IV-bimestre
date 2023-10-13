@@ -9,7 +9,7 @@
         contraseña = txt_contraseña.Text
         If (usuario = "Soy el mejor") And (contraseña = "12345") Then
 
-            Form1.Show()
+            Form3.Show()
             Hide()
         Else
             MsgBox("Verifique que su usuario y contraseña esten escritos correctamente")
